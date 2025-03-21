@@ -9,6 +9,7 @@ uid*/
 .dvc*
 dvc*
 
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -172,3 +173,5 @@ cython_debug/
 
 # vscode
 .vscode/
+
+# david_added
