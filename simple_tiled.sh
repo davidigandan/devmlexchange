@@ -31,6 +31,7 @@ podman run \
   -e TILED_SINGLE_USER_API_KEY=secret \
   --name TiledDAS \
   -d \
+  -v /scratch/Workspaces/Graduate_Projects/mlexchange/segmentation0/mlex_dlsia_segmentation_prototype:/code:rw \ 
   -v /dls/k11/data/2024/mg37376-1/processed/Savu_k11-38638_3x_fd_vo_AST_tiff:/data:ro \
   -v /scratch/Workspaces/Graduate_Projects/mlexchange/segmentation0/outlive:/outlive:rw \
   --pod pod-MLExchange \
@@ -40,5 +41,7 @@ podman run \
 # MLExchange segmentation container
 podman build -t image-mlexchange-seg .
 
-
+# Start up MLExchange contianer and attach into it
 podman run -it -e TILED_SINGLE_USER_API_KEY=secret --name mlexchange --pod pod-MLExchange image-mlexchange-seg
+
+# Start training with make command

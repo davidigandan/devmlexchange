@@ -2,7 +2,7 @@
 
 # I/O
 io_parameters:
-  data_tiled_uri: http://localhost:8000/api/v1/metadata/data
+  data_tiled_uri: http://localhost:8000/api/v1/metadata/
   data_tiled_api_key: secret
   mask_tiled_uri: http://localhost:8000/api/v1/metadata/built-masks
   mask_tiled_api_key: secret
