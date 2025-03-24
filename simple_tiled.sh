@@ -41,4 +41,4 @@ podman run \
 podman build -t image-mlexchange-seg .
 
 
-podman run -e TILED_SINGLE_USER_API_KEY=secret --name mlexchange --pod pod-MLExchange image-mlexchange-seg
+podman run -it -e TILED_SINGLE_USER_API_KEY=secret --name mlexchange --pod pod-MLExchange image-mlexchange-seg
