@@ -10,3 +10,4 @@ COPY src/ src/
 COPY example_yamls/ example_yamls/
 COPY Makefile Makefile
 CMD ["bash"]
+WORKDIR /src
